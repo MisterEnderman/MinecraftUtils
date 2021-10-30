@@ -1,0 +1,6 @@
+name: Me.itamar.plugins.mcutils
+version: ${project.version}
+main: me.itamar.plugins.mcutils.MinecraftUtils
+api-version: 1.16
+authors: [ _MisterEnderman_ ]
+description: Private Utility Plugin for helping myself creating Minecraft Plugins for 1.16.5
