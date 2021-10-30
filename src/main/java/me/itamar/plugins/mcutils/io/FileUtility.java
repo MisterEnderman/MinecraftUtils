@@ -2,7 +2,7 @@ package me.itamar.plugins.mcutils.io;
 
 import java.io.*;
 
-public final class FileUtils {
+public class FileUtility {
 
     /**
      * Copies a file/folder from a particular place to a particular place
