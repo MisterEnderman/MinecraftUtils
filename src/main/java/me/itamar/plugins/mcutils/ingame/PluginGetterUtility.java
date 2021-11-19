@@ -1,4 +1,4 @@
-package me.itamar.plugins.mcutils.ingame.utils;
+package me.itamar.plugins.mcutils.ingame;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
