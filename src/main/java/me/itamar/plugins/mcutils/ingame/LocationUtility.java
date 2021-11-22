@@ -30,4 +30,16 @@ public class LocationUtility {
                 (float) section.getDouble("yaw"), (float) section.getDouble("pitch"));
     }
 
+    /**
+     * Matches 2 locations <b>WITHOUT</b> the y-axis.
+     * @param locationOne the first location to be matched.
+     * @param locationTwo the second location to be matched.
+     * @return if the locations match (excluding y)
+     */
+    public static boolean matchExcludingY(Location locationOne, Location locationTwo) {
+        return locationOne.getWorld() == locationTwo.getWorld() &&
+                locationOne.getX() == locationTwo.getX() &&
+                locationOne.getZ() == locationTwo.getZ();
+    }
+
 }
