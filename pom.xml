@@ -62,6 +62,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>jordanosterberg-repo</id>
+            <url>https://nexus-repo.jordanosterberg.com/repository/maven-releases/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -75,6 +79,11 @@
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
             <version>0.9.12</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.jcsoftware</groupId>
+            <artifactId>JScoreboards</artifactId>
+            <version>2.1.2-RELEASE</version>
         </dependency>
     </dependencies>
 </project>
