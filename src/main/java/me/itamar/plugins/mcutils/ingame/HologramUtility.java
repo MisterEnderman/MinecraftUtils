@@ -2,10 +2,16 @@ package me.itamar.plugins.mcutils.ingame;
 
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.EntityType;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HologramUtility {
+
+    private static final List<ArmorStand> holograms = new ArrayList<>();
 
     /**
      * Creates a hologram
@@ -23,6 +29,25 @@ public class HologramUtility {
         armorStand.setVisible(false);
         armorStand.setCustomName(title);
         armorStand.setCustomNameVisible(true);
+        holograms.add(armorStand);
+    }
+
+    /**
+     * Registers all holograms.
+     */
+    public static void registerHolograms() {
+        for (ArmorStand armorStand : holograms) {
+            createHologram(armorStand.getLocation(), armorStand.getCustomName());
+        }
+    }
+
+    /**
+     * Unregisters all holograms.
+     */
+    public static void unreigsterHolograms() {
+        for (ArmorStand armorStand : holograms) {
+            armorStand.damage(armorStand.getAttribute(Attribute.GENERIC_MAX_HEALTH).getBaseValue());
+        }
     }
 
 }
