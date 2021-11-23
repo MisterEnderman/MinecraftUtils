@@ -4,3 +4,10 @@ main: me.itamar.plugins.mcutils.MinecraftUtils
 api-version: 1.16
 authors: [ _MisterEnderman_ ]
 description: Private Utility Plugin for helping myself creating Minecraft Plugins for 1.16.5
+commands:
+  broadcast:
+    description: Broadcasts a message to everyone.
+    usage: /<command>
+  heal:
+    description: Heals you.
+    usage: /<command>
