@@ -15,6 +15,9 @@ import java.util.Objects;
 
 public class CommandUtility {
 
+    /**
+     * The PluginCommand class. All command classes must extend it.
+     */
     public abstract static class PluginCommand implements CommandExecutor {
 
         private final CommandInfo commandInfo;
@@ -55,6 +58,10 @@ public class CommandUtility {
 
     }
 
+    /**
+     * CommandInfo annotation used for commands. All command classes must have it in its
+     * declaration.
+     */
     @Target(ElementType.TYPE)
     @Retention(RetentionPolicy.RUNTIME)
     public @interface CommandInfo {

@@ -11,10 +11,12 @@ public class RegisterUtility {
 
     /**
      * Registers all listeners of a specific plugin
-     * @implSpec All the listener classes must follow these requirements:
-     * - Must be inside a package that is inside the plugin package with the name "listeners"
-     * - Must have either a default constructor or a constructor with no parameters
-     * - Must have its constructor public.
+     * @implSpec All the listener classes must follow these requirements:<br>
+     * <ul>
+     *   <li>Must be inside a package that is inside the plugin package with the name "listeners"</li>
+     *   <li>Must have either a default constructor or a constructor with no parameters</li>
+     *   <li>Must have its constructor public.</li>
+     * </ul>
      * @param mainClass the main class name of the plugin
      */
     public static void registerAllListeners(String mainClass) {
@@ -44,12 +46,18 @@ public class RegisterUtility {
 
     /**
      * Registers all commands of a specific plugin
-     * @implSpec All the listener classes must follow these requirements:
-     * - Must be inside a package that is inside the plugin package with the name "commands"
-     * - Must extend CommandUtility.PluginCommand
-     * - Must have either a default constructor or a constructor with no parameters
-     * - Must have its constructor public.
-     * @param mainClass the main class name of the plugin
+     * @implSpec All the listener classes must follow these requirements:<br>
+     * <ul>
+     *  <li>Must be inside a package that is inside the plugin package with the name "commands"</li>
+     *  <li>Must extend CommandUtility.PluginCommand</li>
+     *  <li>Must have the annotation CommandUtility.CommandInfo along with its parameters.</li>
+     *  <li>Must have either a default constructor or a constructor with no parameters</li>
+     *  <li>Must have its constructor public.<br>
+     * </ul>
+     * @param mainClass the main class name of the plugin<br>
+     * @see CommandUtility
+     * @see me.itamar.plugins.mcutils.ingame.CommandUtility.PluginCommand
+     * @see me.itamar.plugins.mcutils.ingame.CommandUtility.CommandInfo
      */
     public void registerAllCommands(String mainClass) {
         try {
@@ -62,7 +70,11 @@ public class RegisterUtility {
 
                 Bukkit.getPluginCommand(pluginCommand.getCommandInfo().name()).setExecutor(pluginCommand);
             }
-        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
+        } catch (ClassNotFoundException |
+                NoSuchMethodException |
+                InstantiationException |
+                IllegalAccessException |
+                InvocationTargetException e) {
             e.printStackTrace();
         }
     }
