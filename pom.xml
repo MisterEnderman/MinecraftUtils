@@ -11,7 +11,7 @@
 
     <name>Me.itamar.plugins.mcutils</name>
 
-    <description>Private Utility Plugin for helping myself creating Minecraft Plugins for 1.16.5</description>
+    <description>Utility Plugin for creating Minecraft Plugins for 1.16.5</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
