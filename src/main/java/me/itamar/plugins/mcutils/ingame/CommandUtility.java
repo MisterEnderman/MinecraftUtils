@@ -47,6 +47,7 @@ public class CommandUtility {
                 }
 
                 execute((Player) sender, args);
+                return true;
             }
 
             execute(sender, args);
