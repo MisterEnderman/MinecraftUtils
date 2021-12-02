@@ -46,7 +46,7 @@ public class HologramUtility {
      */
     public static void unreigsterHolograms() {
         for (ArmorStand armorStand : holograms) {
-            armorStand.damage(armorStand.getAttribute(Attribute.GENERIC_MAX_HEALTH).getBaseValue());
+            armorStand.remove();
         }
     }
 
