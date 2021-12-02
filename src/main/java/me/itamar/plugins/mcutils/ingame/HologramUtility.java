@@ -2,7 +2,6 @@ package me.itamar.plugins.mcutils.ingame;
 
 import org.bukkit.Location;
 import org.bukkit.World;
-import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.EntityType;
 
