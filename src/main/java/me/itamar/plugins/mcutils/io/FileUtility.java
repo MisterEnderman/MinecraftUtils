@@ -44,7 +44,7 @@ public class FileUtility {
     }
 
     /**
-     * Deletes a file/older
+     * Deletes a file/folder
      * @param file the file/folder that is being deleted
      */
     public static void delete(File file) {
