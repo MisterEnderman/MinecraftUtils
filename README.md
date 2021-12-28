@@ -1,7 +1,7 @@
 # MinecraftUtils
 
-Utility Plugin for creating Minecraft plugins for 1.16.5
+Utility Plugin for creating Minecraft plugins for 1.16 and above.
 
-This plugin is especially made to help others make minecraft plugins (1.16.5 only)
+This plugin is especially made to help others make minecraft plugins .
 
 If you find any issue report it as a GitHub Issue.
