@@ -9,6 +9,6 @@ If you find any issue report it as a GitHub Issue.
 I don't have a maven repository for this yet, I'll try to :)
 
 This project took inspiration from JordanOsterberg.
-[His Channel]
+[His Channel, highly recommend subscribing :)]
 
-[His Channel]: https://www.youtube.com/c/JordanOsterberg
+[His Channel, highly recommend subscribing :)]: https://www.youtube.com/c/JordanOsterberg
